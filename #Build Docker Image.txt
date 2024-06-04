@@ -1,0 +1,8 @@
+#Build Docker Image
+
+docker build -t restaurant-service .
+
+
+#Run the Docker Container
+
+docker run -d -p 3000:3000 --name restaurant-service --env-file .env restaurant-service
